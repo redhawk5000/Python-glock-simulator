@@ -1,6 +1,6 @@
 import os
 import time
-import keyboard  # pip install keyboard
+import keyboard
 
 count = 17  # starting ammo
 
@@ -21,8 +21,7 @@ def reload():
     print("Reloaded!")
 
 def clear_terminal():
-    # Check the operating system
-    if os.name == 'nt':  # For Windows
+    if os.name == 'nt':  
         _ = os.system('cls')
 
 # Main loop
@@ -46,4 +45,5 @@ while True:
         time.sleep(2)
         clear_terminal
         print("Press SPACE to shoot, R to reload. Press Q to quit.")
+
         continue
